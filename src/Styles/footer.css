@@ -1,0 +1,47 @@
+/* Footer Styles */
+.footer {
+    background-color: #15191E;
+    color: #E3EFF5;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo svg {
+    margin-right: 1rem;
+  }
+  
+  .footer-logo p {
+    margin: 0;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-right: 25px;
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #1d72b8;
+  }
+  
+  .footer-links svg {
+    width: 24px;
+    height: 24px;
+  }
+  
