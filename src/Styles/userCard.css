@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.custom-card {
+  background-color: #15191e;
+  width: 24rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.card-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-body {
+  padding: 2rem 1rem 1rem 1rem;
+
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #e3eff5;
+  font-family: Poppins;
+}
+
+p {
+  color: #e3eff5;
+  font-family: Poppins;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+.description {
+  font-weight: lighter;
+}
+.btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  margin: 0px 5px;
+  font-family: Poppins;
+}
+
+.btn-primary {
+  background-color: #605dff;
+}
+
+.btn-secondary {
+  background-color: #f43098;
+}

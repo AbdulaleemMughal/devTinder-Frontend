@@ -2,7 +2,7 @@
 .card {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin: 50px 0px;
 }
 
 .login-card {
@@ -43,6 +43,24 @@
     padding: 0px 10px;
     border-radius: 5px;
 }
+
+select {
+    background-color: #1D232A;
+    color: #E3EFF5;
+    padding: 0px 10px;
+    border: none;
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+}
+
+textarea {
+    max-width: 100%;
+    background-color: #1D232A;
+    color: #E3EFF5;
+    outline: none;
+    border-radius: 5px;
+}
 .btn-login {
     margin-top: 10px;
     width: 100%;
@@ -58,4 +76,13 @@
     font-family: Poppins;
     width: 100%;
     cursor: pointer;
+}
+
+
+/* editProfile page css  */
+
+.edit-profile {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }

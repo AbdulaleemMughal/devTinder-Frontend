@@ -27,7 +27,7 @@ export const Navbar = () => {
     <>
       <div className="navbar">
         <div className="flex-1">
-          <Link to="/" className="btn-ghost text-xl">
+          <Link to="/feed" className="btn-ghost text-xl">
             DevTinder
           </Link>
         </div>
@@ -57,7 +57,9 @@ export const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <a>Settings</a>
+                    <Link to="/connections" className="justify-between profile">
+                      See Connections
+                    </Link>
                   </li>
                   <li>
                     <a onClick={handleLogout}>Logout</a>

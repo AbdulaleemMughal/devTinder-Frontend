@@ -97,6 +97,8 @@
 
 .profile {
   text-decoration: none;
+  color: black;
+  font-family: Poppins;
 }
 
 .error {
