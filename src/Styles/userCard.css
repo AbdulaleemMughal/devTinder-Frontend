@@ -36,6 +36,9 @@
 p {
   color: #e3eff5;
   font-family: Poppins;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .card-actions {

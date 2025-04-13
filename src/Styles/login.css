@@ -86,3 +86,38 @@ textarea {
     justify-content: center;
     gap: 40px;
 }
+
+.skills {
+    /* border: 1px solid white; */
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.badge {
+    width: fit-content;
+    padding: 3px 5px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.skill-input input {
+    width: 85%;
+}
+
+.skill-input button {
+    width: 10%;
+    padding: 10px 0px;
+    font-family: Poppins;
+    background-color: #605dff;
+    color: white;
+    cursor: pointer;
+}

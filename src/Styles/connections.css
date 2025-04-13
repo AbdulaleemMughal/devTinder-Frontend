@@ -23,6 +23,8 @@
     margin: 10px 0px;
 }
 
-.card img {
+.connection-card img {
     border-radius: 50%;
+    height: 100px;
+    width: 100px;
 }

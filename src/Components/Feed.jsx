@@ -8,6 +8,7 @@ import UserCard from "./UserCard";
 const Feed = () => {
   const dispatch = useDispatch();
   const feed = useSelector((store) => store.feed);
+  console.log(feed);
 
   useEffect(() => {
     fetchFeed();
@@ -28,7 +29,7 @@ const Feed = () => {
   return (
     feed && (
       <div>
-        <UserCard user={feed.data[2]} />
+        <UserCard user={feed.data[0]} />
       </div>
     )
   );

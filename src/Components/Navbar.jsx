@@ -17,6 +17,7 @@ export const Navbar = () => {
       await axios.post(BASE_URL + "/logout", {}, { withCredentials: true });
       navigate("/login");
       dispatch(addUser(null));
+      setDropdown(false);
       console.log(res);
     } catch (err) {
       console.log(err);
@@ -51,13 +52,13 @@ export const Navbar = () => {
               {dropdown && (
                 <ul className="dropdown-content">
                   <li>
-                    <Link to="/profile" className="justify-between profile">
+                    <Link onClick={() => setDropdown(false)} to="/profile" className="justify-between profile">
                       Profile
                       <span className="badge">New</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/connections" className="justify-between profile">
+                    <Link onClick={() => setDropdown(false)}  to="/connections" className="justify-between profile">
                       See Connections
                     </Link>
                   </li>
