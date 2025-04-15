@@ -11,16 +11,15 @@ const Feed = () => {
   const [toast, setToast] = useState(false);
   const feed = useSelector((store) => store.feed);
 
-  useEffect(() => {
-    fetchFeed();
-  }, []);
-
   const fetchFeed = async () => {
     if (feed) return;
     try {
-      const res = await axios.get(BASE_URL + "/user/feed", {
-        withCredentials: true,
-      });
+      const res = await axios.get(
+        BASE_URL + "/user/feed",
+        {
+          withCredentials: true,
+        }
+      );
       dispatch(addFeed(res.data));
       setToast(true);
       setTimeout(() => {
@@ -31,6 +30,11 @@ const Feed = () => {
     }
   };
 
+  useEffect(() => {
+    fetchFeed();
+  }, []);
+
+  if (!feed) return <h1>No Feed Updated</h1>;
   return (
     feed && (
       <div>

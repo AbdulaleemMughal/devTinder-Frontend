@@ -128,3 +128,11 @@ textarea {
     cursor: pointer;
     border: none;
 }
+
+.signup {
+    margin-top: 10px;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: skyblue;
+}

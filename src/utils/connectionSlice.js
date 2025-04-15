@@ -8,7 +8,8 @@ const connectionSlice = createSlice({
             return action.payload;
         },
         removeConnections: (state, action) => {
-            return null;
+            const newFeed = state.filter((feed) => feed._id !== action.payload)
+            return newFeed;
         }
     }
 });
