@@ -52,21 +52,44 @@ export const Navbar = () => {
               {dropdown && (
                 <ul className="dropdown-content">
                   <li>
-                    <Link onClick={() => setDropdown(false)} to="/profile" className="justify-between profile">
+                    <Link
+                      onClick={() => setDropdown(false)}
+                      to="/profile"
+                      className="justify-between profile"
+                    >
                       Profile
                       <span className="badge">New</span>
                     </Link>
                   </li>
                   <li>
-                    <Link onClick={() => setDropdown(false)}  to="/connections" className="justify-between profile">
+                    <Link
+                      onClick={() => setDropdown(false)}
+                      to="/connections"
+                      className="justify-between profile"
+                    >
                       See Connections
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onClick={() => setDropdown(false)}
+                      to="/requests"
+                      className="justify-between profile"
+                    >
+                      Requests
                     </Link>
                   </li>
                   <li>
                     <a onClick={handleLogout}>Logout</a>
                   </li>
                   <li>
-                    <a>Change Password</a>
+                    <Link
+                      onClick={() => setDropdown(false)}
+                      to="/changePassword"
+                      className="justify-between profile"
+                    >
+                      Change Password
+                    </Link>
                   </li>
                 </ul>
               )}

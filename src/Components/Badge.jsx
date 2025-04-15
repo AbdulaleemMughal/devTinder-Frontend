@@ -1,20 +1,15 @@
 import React from "react";
 import { RxCross2 } from "react-icons/rx";
+import { useSelector } from "react-redux";
 
-const Badge = () => {
+const Badge = ({ skill, onDelete }) => {
+
   return (
-    <div>
+    <div className="user-badge">
       <div className="badge">
-        html{" "}
+        {skill}{" "}
         <RxCross2
-          //   onClick={() => deleteSkill(s.id)}
-          style={{ fontSize: "14px", cursor: "pointer" }}
-        />
-      </div>
-      <div className="badge">
-        html{" "}
-        <RxCross2
-          //   onClick={() => deleteSkill(s.id)}
+          onClick={onDelete}
           style={{ fontSize: "14px", cursor: "pointer" }}
         />
       </div>

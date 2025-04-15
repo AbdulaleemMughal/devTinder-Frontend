@@ -9,7 +9,6 @@ import Toast from "./Toast";
 const Connections = () => {
   const dispatch = useDispatch();
   const connection = useSelector((store) => store.connection);
-  const [error, setError] = useState("");
   const [showToast, setShowToast] = useState(false);
 
   useEffect(() => {
@@ -27,11 +26,13 @@ const Connections = () => {
         setShowToast(false);
       }, 2000);
     } catch (err) {
-      console.log(err);
+      return err;
     }
   };
 
   if (!connection) return;
+
+  if(connection.data.length === 0 ) return <h1>No Connection found.</h1>
 
   return (
     <div>
@@ -43,7 +44,9 @@ const Connections = () => {
             <div key={c._id} className="connection-card">
               <img src={c?.photo} />
               <div className="content">
-                <p className="name">{c.firstName} {c.lastName}</p>
+                <p className="name">
+                  {c.firstName} {c.lastName}
+                </p>
                 <p className="age">Age: {c?.age}</p>
                 <p className="gender">Gender: {c?.gender}</p>
                 <p className="about">{c?.about}</p>

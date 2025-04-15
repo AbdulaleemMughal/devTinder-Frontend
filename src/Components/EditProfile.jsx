@@ -7,6 +7,7 @@ import { addUser } from "../utils/userSlice";
 import UserCard from "./UserCard";
 import Toast from "./Toast";
 import { RxCross2 } from "react-icons/rx";
+import Badge from "./Badge";
 
 const EditProfile = ({ user }) => {
   const dispatch = useDispatch();
@@ -32,7 +33,7 @@ const EditProfile = ({ user }) => {
           age,
           about,
           gender,
-          skills
+          skills,
         },
         { withCredentials: true }
       );
@@ -41,7 +42,6 @@ const EditProfile = ({ user }) => {
       setTimeout(() => {
         setShowToast(false);
       }, 2000);
-      console.log(res?.data?.data);
     } catch (err) {
       setError(err.message + " while editing Profile");
       //   console.log(err);
@@ -55,6 +55,7 @@ const EditProfile = ({ user }) => {
     };
 
     setSkills((prev) => [...prev, newSkill]);
+    console.log(skills);
     setValue("");
   };
 
@@ -116,13 +117,18 @@ const EditProfile = ({ user }) => {
               Skills:
               <div className="skills">
                 {skills.map((s) => (
-                  <div className="badge" key={s.id}>
-                    {s.skill}{" "}
-                    <RxCross2
-                      onClick={() => deleteSkill(s.id)}
-                      style={{ fontSize: "14px", cursor: "pointer" }}
-                    />
-                  </div>
+                  // <div className="badge" key={s.id}>
+                  //   {s.skill}{" "}
+                  //   <RxCross2
+                  //     onClick={() => deleteSkill(s.id)}
+                  //     style={{ fontSize: "14px", cursor: "pointer" }}
+                  //   />
+                  // </div>
+                  <Badge
+                    key={s.id}
+                    skill={s.skill}
+                    onDelete={() => deleteSkill(s.id)}
+                  />
                 ))}
               </div>
               <div className="skill-input">

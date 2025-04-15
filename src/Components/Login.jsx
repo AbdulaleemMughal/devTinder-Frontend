@@ -24,12 +24,12 @@ const Login = () => {
         { withCredentials: true }
       );
 
-      console.log(res.data);
-      dispatch(addUser(res.data));
+      console.log(res?.data);
+      dispatch(addUser(res?.data));
       return navigate("/feed");
     } catch (err) {
       console.log(err);
-      setError(err.response.data);
+      setError(err.response?.data);
     }
   };
 

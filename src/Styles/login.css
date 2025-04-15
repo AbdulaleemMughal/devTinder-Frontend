@@ -96,6 +96,12 @@ textarea {
     gap: 3px;
 }
 
+.user-badge {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
 .badge {
     width: fit-content;
     padding: 3px 5px;
@@ -120,4 +126,5 @@ textarea {
     background-color: #605dff;
     color: white;
     cursor: pointer;
+    border: none;
 }

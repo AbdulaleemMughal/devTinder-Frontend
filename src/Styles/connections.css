@@ -21,10 +21,35 @@
     gap: 15px;
     border-radius: 10px;
     margin: 10px 0px;
+    align-items: center;
 }
 
 .connection-card img {
     border-radius: 50%;
     height: 100px;
     width: 100px;
+}
+
+/* Request Page css */
+
+.request-btn button:first-child {
+    background-color: #605DFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.request-btn button:nth-child(2) {
+    background-color: #F43098;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
 }

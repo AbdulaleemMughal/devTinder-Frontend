@@ -8,6 +8,7 @@ import appStore from "./utils/appStore";
 import Feed from "./Components/Feed";
 import Requests from "./Components/Requests";
 import Connections from "./Components/Connections";
+import ChangePassowrd from "./Components/ChangePassowrd";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
               <Route path="/login" element={<Login />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/connections" element={<Connections />} />
+              <Route path="/changePassword" element={<ChangePassowrd />} />
               <Route path="/requests" element={<Requests />} />
             </Route>
           </Routes>
