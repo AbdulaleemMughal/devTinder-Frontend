@@ -14,6 +14,7 @@ export const Body = () => {
 
   useEffect(() => {
     fetchUser();
+    navigate("/login");
   }, []);
 
   const fetchUser = async () => {
